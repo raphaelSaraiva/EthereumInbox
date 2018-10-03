@@ -43,7 +43,7 @@ receive = async function receiveMessage() {
       });
 
       var balance = await web3.eth.getBalance('0xeb533eb56c5a98ea408748a552e3940fb4dc32fc');
-      console.log(balance * Math.pow(10, -18)+'');
+      alert(balance * Math.pow(10, -18)+'');
   };
 
 write("teste");

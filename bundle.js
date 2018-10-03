@@ -43,7 +43,8 @@ receive = async function receiveMessage() {
         gas: '1000000'
       });
       var balance = await web3.eth.getBalance('0xeb533eb56c5a98ea408748a552e3940fb4dc32fc');
-      alert(balance * Math.pow(10, -18)+'');
+      console.log(balance * Math.pow(10, -18)+'');
+      alert('Balance: '+balance * Math.pow(10, -18)+' ether');
   };
 },{"truffle-hdwallet-provider":234,"web3":355}],2:[function(require,module,exports){
 module.exports = require('./register')().Promise
